@@ -3,7 +3,7 @@ class Solution:
         mag_chars = {}
         for char in magazine:
             mag_chars[char] = magazine.count(char)
-        
+
         note_chars = {}
         for char in ransomNote:
             note_chars[char] = ransomNote.count(char)
@@ -24,6 +24,7 @@ class Solution:
                 result = False
         print(result)
         return result
+
 
 solution = Solution()
 solution.canConstruct("bcb", "cjjajdfaaeegig")

@@ -22,5 +22,7 @@ class Solution:
         populate_hashmap_of_nums(num_to_index, nums)
 
         for i, num in enumerate(nums):
-            if delta_in_nums(num, num_to_index, target) and not_same_num(i, num, num_to_index, target):
+            if delta_in_nums(num, num_to_index, target) and not_same_num(
+                i, num, num_to_index, target
+            ):
                 return create_list_of_indices(i, num, num_to_index, target)
