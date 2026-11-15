@@ -1,10 +1,10 @@
 class Solution:
     def minimumSumSubarray(self, nums: list[int], l: int, r: int) -> int:
-        results = {}
+        results: dict[int, int] = {}
         window = nums[:l]
         window_sum = sum(window)
         results[0] = window_sum
-        print(max(results, key=results.get))
+        print(max(results, key=results.__getitem__))
         return 0
 
 def main():
